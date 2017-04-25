@@ -1,0 +1,16 @@
+{
+    "name": "multiinfo/scheduler-bundle",
+    "description": "MIT User Bundle",
+    "type": "Symfony Bundle",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "MIT",
+            "email": "mit@mit.co.ma"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/symfony": "^2.8|^3.0"
+    }
+}
