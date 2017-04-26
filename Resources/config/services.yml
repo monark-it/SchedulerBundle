@@ -1,0 +1,3 @@
+services:
+    mit_scheduler.scheduler:
+        class: MIT\Bundle\SchedulerBundle\Scheduler\Scheduler
