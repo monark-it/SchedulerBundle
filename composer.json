@@ -1,6 +1,6 @@
 {
     "name": "multiinfo/scheduler-bundle",
-    "description": "MIT User Bundle",
+    "description": "MIT Scheduler Bundle",
     "type": "Symfony Bundle",
     "license": "Proprietary",
     "authors": [
