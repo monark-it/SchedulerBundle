@@ -6,11 +6,26 @@
     "authors": [
         {
             "name": "MIT",
-            "email": "mit@mit.co.ma"
+            "email": "contact@mit-agency.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "symfony/symfony": "^2.8|^3.0"
+        "symfony/process": "^2.8|^3.0",
+        "symfony/console": "^2.8|^3.0",
+        "mtdowling/cron-expression": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MIT\\SchedulerBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MIT\\SchedulerBundle\\Tests\\": "/Tests/"
+        }
     }
 }
