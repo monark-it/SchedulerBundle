@@ -1,4 +1,4 @@
 # SchedulerBundle
-Scheduler BUndle
+Scheduler Bundle
 
 **Caution: This is a work in progress**
