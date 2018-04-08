@@ -13,8 +13,9 @@ namespace MIT\Bundle\SchedulerBundle\Tests\Scheduler;
 
 use MIT\Bundle\SchedulerBundle\Scheduler\Scheduler;
 use MIT\Bundle\SchedulerBundle\Task\Task;
+use PHPUnit\Framework\TestCase;
 
-class SchedulerTest extends \PHPUnit_Framework_TestCase
+class SchedulerTest extends TestCase
 {
     public function setUp()
     {

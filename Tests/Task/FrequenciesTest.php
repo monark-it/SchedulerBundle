@@ -13,8 +13,9 @@ namespace MIT\Bundle\SchedulerBundle\Tests\Task;
 
 use Cron\CronExpression;
 use MIT\Bundle\SchedulerBundle\Task\Task;
+use PHPUnit\Framework\TestCase;
 
-class FrequenciesTest extends \PHPUnit_Framework_TestCase
+class FrequenciesTest extends TestCase
 {
     /**
      * @var Task

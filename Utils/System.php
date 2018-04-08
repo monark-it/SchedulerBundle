@@ -26,7 +26,7 @@ final class System
     }
 
     /**
-     * Title tels all.
+     * Title tells all.
      *
      * @return bool
      */
@@ -36,7 +36,7 @@ final class System
     }
 
     /**
-     * Title tels all.
+     * Title tells all.
      *
      * @return bool
      */

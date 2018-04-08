@@ -2,22 +2,16 @@
     "name": "multiinfo/scheduler-bundle",
     "description": "MIT Scheduler Bundle",
     "type": "Symfony Bundle",
-    "license": "Proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "MIT",
             "email": "contact@mit-agency.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "symfony/process": "^2.8|^3.0",
-        "symfony/console": "^2.8|^3.0",
-        "mtdowling/cron-expression": "^1.0"
-    },
     "autoload": {
         "psr-4": {
-            "MIT\\SchedulerBundle\\": ""
+            "MIT\\Bundle\\SchedulerBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
@@ -25,7 +19,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MIT\\SchedulerBundle\\Tests\\": "/Tests/"
+            "MIT\\Bundle\\SchedulerBundle\\Tests\\": "/Tests/"
         }
+    },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "symfony/process": "^2.8 || ^3.0 || ^4.0",
+        "symfony/console": "^2.8 || ^3.0 || ^4.0",
+        "symfony/framework-bundle": "^2.8 || ^3.0 || ^4.0",
+        "mtdowling/cron-expression": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
     }
 }

@@ -14,9 +14,9 @@ namespace MIT\Bundle\SchedulerBundle\Tests\Task;
 use MIT\Bundle\SchedulerBundle\Console\ConsoleApplication;
 use MIT\Bundle\SchedulerBundle\Task\Task;
 use MIT\Bundle\SchedulerBundle\Utils\System;
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use PHPUnit\Framework\TestCase;
 
-class TaskTest extends WebTestCase
+class TaskTest extends TestCase
 {
     /**
      * @var Task
@@ -25,8 +25,6 @@ class TaskTest extends WebTestCase
 
     protected function setUp()
     {
-        parent::setUp();
-        self::bootKernel();
         $this->task = new TestTask('ls -al');
     }
 
@@ -52,25 +50,11 @@ class TaskTest extends WebTestCase
         }
     }
 
-    /**
-     * @param $cmd
-     * @param $expectedOutput
-     * @dataProvider cmdFixtures
-     */
-    public function testRun($cmd, $expectedOutput)
-    {
-    }
-
     public function cmdFixtures()
     {
         return [
             ['foo:bar', 'foo:bar: command not found']
         ];
-    }
-
-    protected function getConsole()
-    {
-        return new ConsoleApplication(self::$kernel);
     }
 }
 

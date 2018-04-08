@@ -37,7 +37,7 @@ interface SchedulerInterface
     public function clear();
 
     /**
-     * Put task int the schedule.
+     * Put a new task into the schedule.
      *
      * @param Task $task
      * @return Task

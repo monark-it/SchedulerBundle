@@ -11,7 +11,6 @@
 
 namespace MIT\Bundle\SchedulerBundle\Console;
 
-use AppBundle\Task\SendMail;
 use MIT\Bundle\SchedulerBundle\Task\Task;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
@@ -22,7 +21,7 @@ class ConsoleApplication extends Application
     public function initSchedule()
     {
         return $this->scheduler->bulk([
-            // new SendMail(),
+            // new \AppBundle\Task\SendMail(),
             // new Task("ls -al", "@hourly"),
             // new Task("ls -al", "*/5 * * * * * ")
         ]);
