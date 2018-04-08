@@ -16,7 +16,7 @@ use MIT\Bundle\SchedulerBundle\Utils\System;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Process\Process;
 
-class Task
+class Task implements TaskInterface
 {
     use Frequencies;
     

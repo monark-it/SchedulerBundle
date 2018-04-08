@@ -25,7 +25,7 @@ interface SchedulerInterface
     /**
      * All due tasks in the schedule.
      *
-     * @return array
+     * @return Task[]
      */
     public function dueTasks();
 
@@ -37,7 +37,7 @@ interface SchedulerInterface
     public function clear();
 
     /**
-     * Put a new task into the schedule.
+     * Put a new task in the scheduler.
      *
      * @param Task $task
      * @return Task

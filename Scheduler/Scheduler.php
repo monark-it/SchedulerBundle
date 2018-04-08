@@ -51,7 +51,7 @@ class Scheduler implements SchedulerInterface
 
     /**
      * @param string|\DateTime $currentTime
-     * @return array
+     * @return Task[]
      */
     public function dueTasks($currentTime = 'now')
     {
