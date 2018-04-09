@@ -1,7 +1,7 @@
 {
     "name": "multiinfo/scheduler-bundle",
     "description": "MIT Scheduler Bundle",
-    "type": "Symfony Bundle",
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
